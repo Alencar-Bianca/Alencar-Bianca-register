@@ -1,0 +1,33 @@
+.container{
+  border: 2px solid #ccc;
+  padding: 10px;
+  display: flex;
+  margin: 25px 0;
+  /*flex-direction: column;*/
+  position: relative;
+}
+.single{
+  margin-bottom: 10px;
+}
+.taskInline{
+  display: inline;
+}
+span{
+  font-weight: bold;
+  font-size: 19px;
+}
+.main-btn{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  /*transform: translate(-50%,-50%);*/
+}
+.btn{
+  font-size: 18px;
+  color: #444;
+  background-color: #7bbbad;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}

@@ -1,0 +1,19 @@
+<section>
+  <p>Infomações</p>
+  <button class="btn" type="submit" [routerLink]="['/new']" >Salvar</button>
+  <section>
+    <div *ngIf="tasks.length == 0">
+        <div class="alert">Nenhum registro foi encontrado</div>
+
+
+    </div>
+
+    <ul *ngIf="tasks.length > 0">
+      <li *ngFor="let task of tasks">
+        <app-task-list-item [task]="task"></app-task-list-item>
+      </li>
+    </ul>
+
+    <div class="btn-container"><button type="button" class="btn btn1" [routerLink]="['/login']">Sair</button></div>
+  </section>
+</section>

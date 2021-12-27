@@ -1,0 +1,36 @@
+<h2>{{title}}</h2>
+
+<section class="container">
+  <form (ngSubmit)="onSubmit()" #formTask="ngForm">
+
+    <div class="single">
+      <label>Nome:</label>
+      <input [(ngModel)]="task.nome" name="nome" type="text">
+    </div>
+
+    <div class="single">
+      <label>Email:</label>
+      <input [(ngModel)]="task.email" name="email" type="text">
+    </div>
+
+    <div class="single">
+      <label>Data de Nascimento:</label>
+      <input [(ngModel)]="task.dataNasc" name="dataNasc" type="text">
+    </div>
+
+    <div class="single">
+      <label>Telefone:</label>
+      <input [(ngModel)]="task.tel" name="tel" type="text">
+    </div>
+
+    <div class="single">
+      <label>Endereço:</label>
+      <input [(ngModel)]="task.endereco" name="endereco" type="text">
+    </div>
+
+    <div class="main-btn">
+      <button class="btn1" type="submit">Salvar</button>
+      <button class="btn2" type="button" [routerLink]="['']">Cancelar</button>
+    </div>
+  </form>
+</section>

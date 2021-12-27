@@ -1,0 +1,15 @@
+<div class="container">
+  <div>
+    <div class="single"><span>Nome: </span><div class="taskInline" [innerHTML]="task.nome"></div></div>
+    <div class="single"><span>Email: </span><div class="taskInline" [innerHTML]="task.email"></div></div>
+    <div class="single"><span>Data de Nasc: </span><div class="taskInline" [innerHTML]="task.dataNasc"></div></div>
+    <div class="single"><span>Telefone: </span><div class="taskInline" [innerHTML]="task.tel"></div></div>
+    <div class="single"><span>Endereço: </span><div class="taskInline" [innerHTML]="task.endereco"></div></div>
+  </div>
+
+  <div class="main-btn">
+  <button class="btn" type="button" [routerLink]="['/edit', task._id]">Alterar</button>
+  </div>
+</div>
+
+

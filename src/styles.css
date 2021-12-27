@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  font-family: 'Roboto Condensed', sans-serif;
+  min-height: 100vh;
+ /* background: linear-gradient(to right, #24248fd8,#164c64,#7bbbad,midnightblue);*/
+  background-size: 500% 100%;
+
+  animation-name: bg;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes bg {
+  0%{
+    background-position-x: 0% ;
+  }
+  100%{
+    background-position-x: 100% ;
+  }
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
